@@ -7,7 +7,7 @@ public class RoomToPaintDemo {
 		RoomToPaint room1 = new RoomToPaint();
 		
 		// add attributes
-		room1.height = 15;
+		room1.length = 15;
 		room1.width = 10;
 		room1.numOfWalls = 4;
 		room1.costToPaintPerWall = 25.00;
@@ -18,8 +18,8 @@ public class RoomToPaintDemo {
 		
 		//output
 		System.out.println(
-				"The total floor area of a room with a height of " + 
-				room1.height + " and width of " + room1.width + " is " + floorArea);
+				"The total floor area of a room with a length of " + 
+				room1.length + " and width of " + room1.width + " is " + floorArea);
 		
 		System.out.println(
 				"The total cost to paint a room with " + 
@@ -32,7 +32,7 @@ public class RoomToPaintDemo {
 		RoomToPaint room2 = new RoomToPaint();
 		
 		// add attributes
-		room2.height = 1;
+		room2.length = 1;
 		room2.width = 25;
 		room2.numOfWalls = 6;
 		room2.costToPaintPerWall = 35.99;
@@ -43,8 +43,8 @@ public class RoomToPaintDemo {
 		
 		//output
 		System.out.println(
-				"The total floor area of a room with a height of " + 
-				room2.height + " and width of " + room2.width + " is " + floorArea2);
+				"The total floor area of a room with a length of " + 
+				room2.length + " and width of " + room2.width + " is " + floorArea2);
 		
 		System.out.println(
 				"The total cost to paint a room with " + 

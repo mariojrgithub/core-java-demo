@@ -2,13 +2,13 @@ package classesandobjects;
 
 public class RoomToPaint {
 	int width;
-	int height;
+	int length;
 	int numOfWalls;
 	double costToPaintPerWall;
 	
 	// method to calculate floor area
 	int calculateFloorArea() {
-		return width * height;
+		return width * length;
 	}
 	
 	// method to calculate the cost of painting the walls
