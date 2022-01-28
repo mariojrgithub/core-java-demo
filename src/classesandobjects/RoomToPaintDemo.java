@@ -23,8 +23,8 @@ public class RoomToPaintDemo {
 		
 		System.out.println(
 				"The total cost to paint a room with " + 
-				room1.numOfWalls + " walls at " + room1.costToPaintPerWall + " per wall is " + 
-				paintCost);
+				room1.numOfWalls + " walls at " + room1.costToPaintPerWall + 
+				" per wall is " + paintCost);
 		
 		System.out.println("------------------------------------");
 
@@ -32,7 +32,7 @@ public class RoomToPaintDemo {
 		RoomToPaint room2 = new RoomToPaint();
 		
 		// add attributes
-		room2.length = 1;
+		room2.length = 10;
 		room2.width = 25;
 		room2.numOfWalls = 6;
 		room2.costToPaintPerWall = 35.99;
@@ -48,8 +48,8 @@ public class RoomToPaintDemo {
 		
 		System.out.println(
 				"The total cost to paint a room with " + 
-				room2.numOfWalls + " walls at " + room2.costToPaintPerWall + " per wall is " + 
-				paintCost2);
+				room2.numOfWalls + " walls at " + room2.costToPaintPerWall + 
+				" per wall is " + paintCost2);
 		
 		
 	}

@@ -17,7 +17,13 @@ public class Bank {
 
 	// withdraw money
 	double withdraw() {
-		double newBalance = balance - amountToWithdraw;
+		// reassign balance
+		balance -= amountToWithdraw;
+		
+		// create new variable to return
+		double newBalance = balance;
+		
 		return newBalance;
+
 	}
 }
