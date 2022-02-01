@@ -2,25 +2,67 @@ package classesandobjects;
 
 public class FordFigo {
 	
-	int modelNum;
-	String color;
-	String carType;
+	private int modelNum;
+	private String color;
+	private String carType;
+	private String carName;
+	
+	// getter for modelNum
+	public int getModelNum() {
+		return modelNum;
+	}
+	
+	// setter for modelNum
+	public void setModelNum(int modelNum) {
+		this.modelNum = modelNum;
+	}
+	
+	// getter for color
+	public String getColor() {
+		return color;
+	}
+	
+	// setter for color
+	public void setColor(String color) {
+		this.color = color;
+	}
+	
+	// getter for carType
+	public String getCarType() {
+		return carType;
+	}
+	
+	// setter for carType
+	public void setCarType(String carType) {
+		this.carType = carType;
+	}
+	
+	// getter for carName
+	public String getCarName() {
+		return carName;
+	}
+	
+	// setter for carName
+	public void setCarName(String carName) {
+		this.carName = carName;
+	}
+	
 	
 	String unlockCar() {
-		return "Car unlocked";
+		return carName + " unlocked";
 	}
 	
 	String lockCar() {
-		return "Ford Figo locked";
+		return carName + " locked";
 	}
 	
 	String accelerate() {
-		return "Ford Figo accelerated!";
+		return carName + " accelerated!";
 	}
 	
 	String applyBrake() {
 		manualBrakeSystem();
-		return "Ford Figo applied brake";
+		return carName + " applied brake";
 	}
 	
 	void manualBrakeSystem() {
