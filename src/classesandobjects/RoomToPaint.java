@@ -6,6 +6,17 @@ public class RoomToPaint {
 	int numOfWalls;
 	double costToPaintPerWall;
 	
+	// constructor
+	public RoomToPaint(int width, int length) {
+		this.width = width;
+		this.length = length;
+	}
+	
+	@Override
+	public String toString() {
+		return "[width: " + width + ", length: " + length + "]";
+	}
+	
 	// method to calculate floor area
 	int calculateFloorArea() {
 		return width * length;

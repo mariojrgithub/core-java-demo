@@ -4,11 +4,11 @@ public class RoomToPaintDemo {
 
 	public static void main(String[] args) {
 		// initialize a new room
-		RoomToPaint room1 = new RoomToPaint();
+		RoomToPaint room1 = new RoomToPaint(10, 15);
 		
 		// add attributes
-		room1.length = 15;
-		room1.width = 10;
+//		room1.length = 15;
+//		room1.width = 10;
 		room1.numOfWalls = 4;
 		room1.costToPaintPerWall = 25.00;
 		
@@ -29,11 +29,11 @@ public class RoomToPaintDemo {
 		System.out.println("------------------------------------");
 
 		// initialize a new room
-		RoomToPaint room2 = new RoomToPaint();
+		RoomToPaint room2 = new RoomToPaint(10, 25);
 		
 		// add attributes
-		room2.length = 10;
-		room2.width = 25;
+//		room2.length = 10;
+//		room2.width = 25;
 		room2.numOfWalls = 6;
 		room2.costToPaintPerWall = 35.99;
 		

@@ -6,6 +6,7 @@ public class FordFigoTitanium extends FordFigo {
 		return "Airbags are popped";
 	}
 	
+	@Override
 	String applyBrake() {
 		super.applyBrake(); // used to call the overridden method of the parent class
 		
