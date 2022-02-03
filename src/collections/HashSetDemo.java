@@ -9,7 +9,7 @@ public class HashSetDemo {
 
 	public static void main(String[] args) {
 		
-		Set myHashSet = new HashSet();
+		Set<Object> myHashSet = new HashSet<>();
 		
 		String str1 = "Hello";
 		String str2 = "Welcome";
@@ -23,13 +23,17 @@ public class HashSetDemo {
 		myHashSet.add(room.toString());
 		myHashSet.add(number);
 		myHashSet.add(str1); // not allowed
+		System.out.println(myHashSet);
 		
 		// Update
-		myHashSet.add("CA");
+		myHashSet.add("pizza");
 		System.out.println(myHashSet);
 		
 		// Delete
+		myHashSet.remove(str2);
 		
+		// check if an element is in the set
+		System.out.println("Is " + str2 + " in the set? " + myHashSet.contains(str2));
 		
 		// Read
 		System.out.println(myHashSet);

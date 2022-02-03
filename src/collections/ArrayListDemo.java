@@ -15,7 +15,7 @@ public class ArrayListDemo {
 //		ArrayList myList = new ArrayList(); // not recommended
 		
 		// recommended
-		List myList = new ArrayList();
+		List<Object> myList = new ArrayList<>(); // using a generic
 		
 		
 		String str1 = "Hello";
@@ -23,6 +23,7 @@ public class ArrayListDemo {
 		RoomToPaint room = new RoomToPaint(15, 25);
 //		Integer number = new Integer(10); // deprecated
 		Integer number = 10;
+		int numInt = 5;
 		
 		// Create
 		myList.add(str1);
@@ -30,17 +31,18 @@ public class ArrayListDemo {
 		myList.add(room.toString());
 		myList.add(number);
 		myList.add(str1);
+		myList.add(numInt); // auto boxing, converted to wrapper class
 		
 		// Read
 		System.out.println(myList);
 		System.out.println(myList.get(1));
 		
 		// Update
-		myList.add(2, "Mario");
+		myList.set(0, "Mario");
 		System.out.println(myList);
 		
 		// Delete
-		myList.remove(3);
+		myList.remove(2);
 		
 		System.out.println(myList);
 		
