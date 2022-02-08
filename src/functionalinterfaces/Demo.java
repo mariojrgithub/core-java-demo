@@ -1,5 +1,8 @@
 package functionalinterfaces;
 
+import java.util.function.BiFunction;
+import java.util.function.Function;
+
 public class Demo {
 
 	public static void main(String[] args) {
@@ -50,8 +53,18 @@ public class Demo {
 		int answer6 = multiply2.operate(50, 50);
 		System.out.println("The answer using lambda (multiply) is: " + answer6);
 		
+		// using built-in BiFunction functional interface
+		BiFunction<Integer, Integer, Integer> add4 = (first, second) -> first + second;
+		
+		int answer7 = add4.apply(45, 34);
+		System.out.println("The answer using BiFunction (addition) is: " + answer7);
 		
 		
+		// write program that computes the square of a number using lambdas
+		Function<Integer, Integer> findSquare = num -> num * num;
+		
+		int answer8 = findSquare.apply(5);
+		System.out.println("The answer using Function (sqaure) is: " + answer8);
 	}
 
 }
