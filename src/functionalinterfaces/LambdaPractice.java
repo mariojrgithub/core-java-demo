@@ -22,6 +22,7 @@ public class LambdaPractice {
 		
 		System.out.println("*********************************************");
 		
+		
 		// 2. compute the base power number
 		BiFunction<Integer, Integer, Integer> computePower = (num, toThePower) -> (int)Math.pow(num, toThePower);
 		int computePowerAnswer = computePower.apply(5, 4);
@@ -42,13 +43,15 @@ public class LambdaPractice {
 		
 		System.out.println("*********************************************");
 		
+		
 		// 4. generate a random number
-		Supplier<Double> randomNumGenerator = () -> Math.random() * 10;
+		Supplier<Double> randomNumGenerator = () -> Math.random() * 100;
 		Double randomNumGeneratorAnswer = randomNumGenerator.get();
 		
 		System.out.println("Here is a random number: " + randomNumGeneratorAnswer);
 		
 		System.out.println("*********************************************");
+		
 		
 		// 5. print elements of an array
 		Consumer<Integer[]> printArrayElems = (intArray) -> {
@@ -60,6 +63,7 @@ public class LambdaPractice {
 		printArrayElems.accept(intArray);
 		
 		System.out.println("*********************************************");
+		
 		
 		// 6. add two matrices
 		Integer[][] firstMatrix = { {2, 3, 4}, {5, 6, 7}, {2, 3, 4} };
@@ -86,6 +90,7 @@ public class LambdaPractice {
 		
 		System.out.println("*********************************************");
 		
+		
 		// 7. find the factorial of a number
 		ToIntFunction<Integer> calculateFactorial = (number) -> {
 			int factorialResult = 1;
@@ -106,6 +111,7 @@ public class LambdaPractice {
 		
 		System.out.println("*********************************************");
 		
+		
 		// 8. check if first string is substring of a second string
 		String sOne = "I love pizza";
 		String sTwo = "pizza";
@@ -114,7 +120,7 @@ public class LambdaPractice {
 		
 		boolean isSubstringAnswer = isSubstring.test(sOne, sTwo);
 		
-		System.out.println("Is " + sTwo + " a substring of " + sOne + "? " + isSubstringAnswer);
+		System.out.println("Is " + "\"" + sTwo + "\"" + " a substring of " + "\"" + sOne + "\"? " + isSubstringAnswer);
 			
 		}
 		
